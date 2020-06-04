@@ -1,14 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import './Welcom';
 import Welcom from './Welcom';
 
-function App() {
-  return (
+class App extends React.Component {
+  
+  render(){
+      return(
+        <nav className="nav">
+          <a className="nav-link active" href="#">Active</a>
+          <a className="nav-link" href="#">Ajouter Produit</a>
+          <a className="nav-link" href="#">Lister Produits</a>
+          <a className="nav-link" href="#">Entrer</a>
+          <a className="nav-link" href="#">Sortie</a>
+        </nav>
+      );
+  }
     
     
-      <Welcom/>
+      
     /*<div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -22,7 +32,6 @@ function App() {
         </a>
       </header>
     </div>*/
-  );
 }
 
 export default App;

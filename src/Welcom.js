@@ -1,8 +1,14 @@
 import React, { Component } from 'react'
+import ListProduit from './components/ListProduit'
 class Welcom extends React.Component {
     render(){
         return (
-            <h1>Welcom</h1>
+            <div>
+                <header>
+                    Gestion de Stock
+                    <ListProduit />
+                </header>
+            </div>
         );
     }
        
